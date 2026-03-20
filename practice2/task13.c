@@ -1,0 +1,28 @@
+#include <stdio.h>
+int main(void)
+{
+ int n, num;
+    int count = 0;
+    int i = 0;
+
+    printf("Сколько чисел: ");
+    scanf("%d", &n);
+
+    printf("Введите числа через пробел: ");
+
+    while (i < n)
+    {
+        scanf("%d", &num);
+
+        if (num > 10)
+        {
+            count++;
+        }
+
+        i++;
+    }
+
+    printf("Чисел больше 10: %d\n", count);
+
+    return 0;
+}
