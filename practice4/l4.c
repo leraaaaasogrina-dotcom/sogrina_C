@@ -1,18 +1,23 @@
 #include <stdio.h>
 int main()
 {
-    char str[]= "lera-spiking 'hello'";
-    char *p = srt;
-    int i=;
-    if(p==a || p==e || p==i || p==o || p==u || p==y)
+    char str[]= "LERA-spiking 'hello'";
+    char *p = str;
+    printf("Исходная строка: %s\n", str);
+    
+    while(*p != '\0')
     {
-        str[i]= *;
+     if(*p=='a' || *p=='e' || *p=='i' || *p=='o' || 
+        *p=='u' || *p=='y' || *p=='A' || *p=='E' || 
+        *p=='I' || *p=='O' || *p=='U' || *p=='Y')
+     {
+        *p = '*';
+     }
+     p++;
     }
-    i++;
-    while(p>=str)
-    {
-        printf("%c", *p);
-        p--;
-    }
+    
+    
+    printf("Изменненная строка %s", str);
+    
     return 0;
 }
